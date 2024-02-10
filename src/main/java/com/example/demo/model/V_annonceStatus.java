@@ -13,6 +13,8 @@ public class V_annonceStatus {
     @Id
     int id_annonce;
     int id_user;
+    String nom;
+    String prenom;
     String marque;
     String categorie;
     String model;
@@ -21,9 +23,28 @@ public class V_annonceStatus {
     double prix;
     Date dateannonce;
     int states;
-    
+    int id_photo ;
+
+    String photo;
+
+    public int getId_photo() {
+        return id_photo;
+    }
+
+    public void setId_photo(int id_photo) {
+        this.id_photo = id_photo;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
     public V_annonceStatus(int id_annonce, int id_user, String marque, String categorie, String model, String detail,
-            String defauts, double prix, Date dateannonce, int states) {
+                           String defauts, double prix, Date dateannonce, int states) {
         this.id_annonce = id_annonce;
         this.id_user = id_user;
         this.marque = marque;
@@ -34,6 +55,23 @@ public class V_annonceStatus {
         this.prix = prix;
         this.dateannonce = dateannonce;
         this.states = states;
+    }
+
+    public V_annonceStatus(int id_annonce, int id_user, String nom, String prenom, String marque, String categorie, String model, String detail, String defauts, double prix, Date dateannonce, int states, int id_photo, String photo) {
+        this.id_annonce = id_annonce;
+        this.id_user = id_user;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.marque = marque;
+        this.categorie = categorie;
+        this.model = model;
+        this.detail = detail;
+        this.defauts = defauts;
+        this.prix = prix;
+        this.dateannonce = dateannonce;
+        this.states = states;
+        this.id_photo = id_photo;
+        this.photo = photo;
     }
 
     public String getMarque() {

@@ -24,9 +24,9 @@ public class Utilisateur {
     String telephone;
     String adresse;
     String mdp;
-    Date dte;
+    Date date_inscription;
     public Utilisateur(int id_user, String nom, String prenom, Date dtn, String email, String telephone, String adresse,
-            String mdp, Date dte) {
+            String mdp, Date date_inscription) {
         this.id_user = id_user;
         this.nom = nom;
         this.prenom = prenom;
@@ -35,13 +35,13 @@ public class Utilisateur {
         this.telephone = telephone;
         this.adresse = adresse;
         this.mdp = mdp;
-        this.dte = dte;
+        this.date_inscription = date_inscription;
     }
     public Date getDte() {
-        return dte;
+        return date_inscription;
     }
-    public void setDte(Date dte) {
-        this.dte = dte;
+    public void setDte(Date date_inscription) {
+        this.date_inscription = date_inscription;
     }
     public Utilisateur(String email, String mdp) {
         this.email = email;
